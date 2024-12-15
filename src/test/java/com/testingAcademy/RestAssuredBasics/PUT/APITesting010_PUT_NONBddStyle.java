@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class APITesting010_PUT_NONBddStyle {
 
-    RequestSpecification requestSpecification;
+    //RequestSpecification requestSpecification;
 
 
 

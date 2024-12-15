@@ -1,4 +1,4 @@
-package com.testingAcademy.RestAssuredBasics.PATCH;
+package com.thetestingacademy.RestAssuredBasics.PATCH;
 
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
@@ -8,7 +8,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
-public class APITesting010_PUT_NONBddStyle {
+public class APITesting010_PATCH_NONBddStyle {
 
     RequestSpecification requestSpecification;
 
@@ -64,8 +64,8 @@ public class APITesting010_PUT_NONBddStyle {
         //    "additionalneeds" : "Breakfast"
         //}
 
-        String token = "1e817e5321b553f";
-        String bookingid = "2179";
+        String token = "4e93116ff8137b7";
+        String bookingid = "3518";
 
 
         String payloadPUT= "{\n" +
@@ -89,7 +89,7 @@ public class APITesting010_PUT_NONBddStyle {
         requestSpecification.cookie("token",token);
         requestSpecification.body(payloadPUT).log().all();
 
-        Response response = requestSpecification.when().put();
+        Response response = requestSpecification.when().patch();
 
         ValidatableResponse validatableResponse = response.then().log().all();
 
