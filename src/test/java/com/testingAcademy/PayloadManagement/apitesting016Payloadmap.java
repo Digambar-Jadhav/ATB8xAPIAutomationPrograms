@@ -28,8 +28,6 @@ public class apitesting016Payloadmap {
         //        },
         //            "additionalneeds" : "Breakfast"
         //        }
-
-
         // JSON -> Hashmap
 
         Map<String,Object> jsonBodyUsingMap = new LinkedHashMap();
